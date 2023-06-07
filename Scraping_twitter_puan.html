@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; My sample book</title>
+    <title>Scraping Puan &#8212; My sample book</title>
   
   
   
@@ -154,11 +154,12 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 <li class="toctree-l1"><a class="reference internal" href="topik%20%281%29.html"><strong>Topic Modelling</strong></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Scraping Puan</a></li>
 </ul>
 
     </div>
@@ -329,9 +330,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -342,19 +341,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Scraping Puan</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -364,7 +355,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="cell docutils container">
+  <div class="tex2jax_ignore mathjax_ignore section" id="scraping-puan">
+<h1>Scraping Puan<a class="headerlink" href="#scraping-puan" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>git<span class="w"> </span>clone<span class="w"> </span>--depth<span class="o">=</span><span class="m">1</span><span class="w"> </span>https://github.com/twintproject/twint.git
 <span class="o">%</span><span class="k">cd</span> twint
@@ -374,156 +367,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cloning into &#39;twint&#39;...
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>remote: Enumerating objects: 47, done.
-remote: Counting objects:   2% (1/47)
-remote: Counting objects:   4% (2/47)
-remote: Counting objects:   6% (3/47)
-remote: Counting objects:   8% (4/47)
-remote: Counting objects:  10% (5/47)
-remote: Counting objects:  12% (6/47)
-remote: Counting objects:  14% (7/47)
-remote: Counting objects:  17% (8/47)
-remote: Counting objects:  19% (9/47)
-remote: Counting objects:  21% (10/47)
-remote: Counting objects:  23% (11/47)
-remote: Counting objects:  25% (12/47)
-remote: Counting objects:  27% (13/47)
-remote: Counting objects:  29% (14/47)
-remote: Counting objects:  31% (15/47)
-remote: Counting objects:  34% (16/47)
-remote: Counting objects:  36% (17/47)
-remote: Counting objects:  38% (18/47)
-remote: Counting objects:  40% (19/47)
-remote: Counting objects:  42% (20/47)
-remote: Counting objects:  44% (21/47)
-remote: Counting objects:  46% (22/47)
-remote: Counting objects:  48% (23/47)
-remote: Counting objects:  51% (24/47)
-remote: Counting objects:  53% (25/47)
-remote: Counting objects:  55% (26/47)
-remote: Counting objects:  57% (27/47)
-remote: Counting objects:  59% (28/47)
-remote: Counting objects:  61% (29/47)
-remote: Counting objects:  63% (30/47)
-remote: Counting objects:  65% (31/47)
-remote: Counting objects:  68% (32/47)
-remote: Counting objects:  70% (33/47)
-remote: Counting objects:  72% (34/47)
-remote: Counting objects:  74% (35/47)
-remote: Counting objects:  76% (36/47)
-remote: Counting objects:  78% (37/47)
-remote: Counting objects:  80% (38/47)
-remote: Counting objects:  82% (39/47)
-remote: Counting objects:  85% (40/47)
-remote: Counting objects:  87% (41/47)
-remote: Counting objects:  89% (42/47)
-remote: Counting objects:  91% (43/47)
-remote: Counting objects:  93% (44/47)
-remote: Counting objects:  95% (45/47)
-remote: Counting objects:  97% (46/47)
-remote: Counting objects: 100% (47/47)
-remote: Counting objects: 100% (47/47), done.
-remote: Compressing objects:   2% (1/44)
-remote: Compressing objects:   4% (2/44)
-remote: Compressing objects:   6% (3/44)
-remote: Compressing objects:   9% (4/44)
-remote: Compressing objects:  11% (5/44)
-remote: Compressing objects:  13% (6/44)
-remote: Compressing objects:  15% (7/44)
-remote: Compressing objects:  18% (8/44)
-remote: Compressing objects:  20% (9/44)
-remote: Compressing objects:  22% (10/44)
-remote: Compressing objects:  25% (11/44)
-remote: Compressing objects:  27% (12/44)
-remote: Compressing objects:  29% (13/44)
-remote: Compressing objects:  31% (14/44)
-remote: Compressing objects:  34% (15/44)
-remote: Compressing objects:  36% (16/44)
-remote: Compressing objects:  38% (17/44)
-remote: Compressing objects:  40% (18/44)
-remote: Compressing objects:  43% (19/44)
-remote: Compressing objects:  45% (20/44)
-remote: Compressing objects:  47% (21/44)
-remote: Compressing objects:  50% (22/44)
-remote: Compressing objects:  52% (23/44)
-remote: Compressing objects:  54% (24/44)
-remote: Compressing objects:  56% (25/44)
-remote: Compressing objects:  59% (26/44)
-remote: Compressing objects:  61% (27/44)
-remote: Compressing objects:  63% (28/44)
-remote: Compressing objects:  65% (29/44)
-remote: Compressing objects:  68% (30/44)
-remote: Compressing objects:  70% (31/44)
-remote: Compressing objects:  72% (32/44)
-remote: Compressing objects:  75% (33/44)
-remote: Compressing objects:  77% (34/44)
-remote: Compressing objects:  79% (35/44)
-remote: Compressing objects:  81% (36/44)
-remote: Compressing objects:  84% (37/44)
-remote: Compressing objects:  86% (38/44)
-remote: Compressing objects:  88% (39/44)
-remote: Compressing objects:  90% (40/44)
-remote: Compressing objects:  93% (41/44)
-remote: Compressing objects:  95% (42/44)
-remote: Compressing objects:  97% (43/44)
-remote: Compressing objects: 100% (44/44)
-remote: Compressing objects: 100% (44/44), done.
-remote: Total 47 (delta 3), reused 14 (delta 0), pack-reused 0
-Unpacking objects:   2% (1/47)
-Unpacking objects:   4% (2/47)
-Unpacking objects:   6% (3/47)
-Unpacking objects:   8% (4/47)
-Unpacking objects:  10% (5/47)
-Unpacking objects:  12% (6/47)
-Unpacking objects:  14% (7/47)
-Unpacking objects:  17% (8/47)
-Unpacking objects:  19% (9/47)
-Unpacking objects:  21% (10/47)
-Unpacking objects:  23% (11/47)
-Unpacking objects:  25% (12/47)
-Unpacking objects:  27% (13/47)
-Unpacking objects:  29% (14/47)
-Unpacking objects:  31% (15/47)
-Unpacking objects:  34% (16/47)
-Unpacking objects:  36% (17/47)
-Unpacking objects:  38% (18/47)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Unpacking objects:  40% (19/47)
-Unpacking objects:  42% (20/47)
-Unpacking objects:  44% (21/47)
-Unpacking objects:  46% (22/47)
-Unpacking objects:  48% (23/47)
-Unpacking objects:  51% (24/47)
-Unpacking objects:  53% (25/47)
-Unpacking objects:  55% (26/47)
-Unpacking objects:  57% (27/47)
-Unpacking objects:  59% (28/47)
-Unpacking objects:  61% (29/47)
-Unpacking objects:  63% (30/47)
-Unpacking objects:  65% (31/47)
-Unpacking objects:  68% (32/47)
-Unpacking objects:  70% (33/47)
-Unpacking objects:  72% (34/47)
-Unpacking objects:  74% (35/47)
-Unpacking objects:  76% (36/47)
-Unpacking objects:  78% (37/47)
-Unpacking objects:  80% (38/47)
-Unpacking objects:  82% (39/47), 32.95 KiB | 65.00 KiB/s
-Unpacking objects:  85% (40/47), 32.95 KiB | 65.00 KiB/s
-Unpacking objects:  87% (41/47), 32.95 KiB | 65.00 KiB/s
-Unpacking objects:  89% (42/47), 32.95 KiB | 65.00 KiB/s
-Unpacking objects:  91% (43/47), 32.95 KiB | 65.00 KiB/s
-Unpacking objects:  93% (44/47), 32.95 KiB | 65.00 KiB/s
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Unpacking objects:  95% (45/47), 32.95 KiB | 65.00 KiB/s
-Unpacking objects:  97% (46/47), 32.95 KiB | 65.00 KiB/s
-Unpacking objects: 100% (47/47), 32.95 KiB | 65.00 KiB/s
-Unpacking objects: 100% (47/47), 42.93 KiB | 69.00 KiB/s, done.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>fatal: destination path &#39;twint&#39; already exists and is not an empty directory.
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/content/drive/MyDrive/PSD/tugas/twint
@@ -534,93 +378,30 @@ Processing /content/drive/MyDrive/PSD/tugas/twint
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Preparing metadata (setup.py) ... ?25l?25hdone
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting aiohttp (from -r requirements.txt (line 1))
-  Downloading aiohttp-3.8.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.0 MB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/1.0 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">1.0/1.0 MB</span> <span class=" -Color -Color-Red">40.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hCollecting aiodns (from -r requirements.txt (line 2))
-  Downloading aiodns-3.0.0-py3-none-any.whl (5.0 kB)
+Requirement already satisfied: aiohttp in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 1)) (3.8.4)
+Requirement already satisfied: aiodns in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 2)) (3.0.0)
 Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 3)) (4.11.2)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting cchardet (from -r requirements.txt (line 4))
-  Downloading cchardet-2.1.7.tar.gz (653 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/653.6 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">653.6/653.6 kB</span> <span class=" -Color -Color-Red">49.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25h
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Preparing metadata (setup.py) ... ?25l?25hdone
-Collecting dataclasses (from -r requirements.txt (line 5))
-  Downloading dataclasses-0.6-py3-none-any.whl (14 kB)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting elasticsearch (from -r requirements.txt (line 6))
-  Downloading elasticsearch-8.8.0-py3-none-any.whl (393 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/393.8 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">393.8/393.8 kB</span> <span class=" -Color -Color-Red">36.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hRequirement already satisfied: pysocks in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 7)) (1.7.1)
+Requirement already satisfied: cchardet in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 4)) (2.1.7)
+Requirement already satisfied: dataclasses in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 5)) (0.6)
+Requirement already satisfied: elasticsearch in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 6)) (8.8.0)
+Requirement already satisfied: pysocks in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 7)) (1.7.1)
 Requirement already satisfied: pandas&gt;=0.23.0 in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 8)) (1.5.3)
-Collecting aiohttp_socks&lt;=0.4.1 (from -r requirements.txt (line 9))
-  Downloading aiohttp_socks-0.4.1-py3-none-any.whl (17 kB)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting schedule (from -r requirements.txt (line 10))
-  Downloading schedule-1.2.0-py2.py3-none-any.whl (11 kB)
+Requirement already satisfied: aiohttp_socks&lt;=0.4.1 in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 9)) (0.4.1)
+Requirement already satisfied: schedule in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 10)) (1.2.0)
 Requirement already satisfied: geopy in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 11)) (2.3.0)
-Collecting fake-useragent (from -r requirements.txt (line 12))
-  Downloading fake_useragent-1.1.3-py3-none-any.whl (50 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/50.5 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">50.5/50.5 kB</span> <span class=" -Color -Color-Red">5.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25h
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting googletransx (from -r requirements.txt (line 13))
-  Downloading googletransx-2.4.2.tar.gz (13 kB)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Preparing metadata (setup.py) ... ?25l?25hdone
+Requirement already satisfied: fake-useragent in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 12)) (1.1.3)
+Requirement already satisfied: googletransx in /usr/local/lib/python3.10/dist-packages (from -r requirements.txt (line 13)) (2.4.2)
 Requirement already satisfied: attrs&gt;=17.3.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (23.1.0)
 Requirement already satisfied: charset-normalizer&lt;4.0,&gt;=2.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (2.0.12)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting multidict&lt;7.0,&gt;=4.5 (from aiohttp-&gt;-r requirements.txt (line 1))
-  Downloading multidict-6.0.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (114 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/114.5 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">114.5/114.5 kB</span> <span class=" -Color -Color-Red">10.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hCollecting async-timeout&lt;5.0,&gt;=4.0.0a3 (from aiohttp-&gt;-r requirements.txt (line 1))
-  Downloading async_timeout-4.0.2-py3-none-any.whl (5.8 kB)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting yarl&lt;2.0,&gt;=1.0 (from aiohttp-&gt;-r requirements.txt (line 1))
-  Downloading yarl-1.9.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (268 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/268.8 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">268.8/268.8 kB</span> <span class=" -Color -Color-Red">25.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25h
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting frozenlist&gt;=1.1.1 (from aiohttp-&gt;-r requirements.txt (line 1))
-  Downloading frozenlist-1.3.3-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (149 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/149.6 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">149.6/149.6 kB</span> <span class=" -Color -Color-Red">16.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hCollecting aiosignal&gt;=1.1.2 (from aiohttp-&gt;-r requirements.txt (line 1))
-  Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting pycares&gt;=4.0.0 (from aiodns-&gt;-r requirements.txt (line 2))
-  Downloading pycares-4.3.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (288 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/288.7 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">288.7/288.7 kB</span> <span class=" -Color -Color-Red">29.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hRequirement already satisfied: soupsieve&gt;1.2 in /usr/local/lib/python3.10/dist-packages (from beautifulsoup4-&gt;-r requirements.txt (line 3)) (2.4.1)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting elastic-transport&lt;9,&gt;=8 (from elasticsearch-&gt;-r requirements.txt (line 6))
-  Downloading elastic_transport-8.4.0-py3-none-any.whl (59 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/59.5 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">59.5/59.5 kB</span> <span class=" -Color -Color-Red">6.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hRequirement already satisfied: python-dateutil&gt;=2.8.1 in /usr/local/lib/python3.10/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (2.8.2)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.10/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (6.0.4)
+Requirement already satisfied: async-timeout&lt;5.0,&gt;=4.0.0a3 in /usr/local/lib/python3.10/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (4.0.2)
+Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (1.9.2)
+Requirement already satisfied: frozenlist&gt;=1.1.1 in /usr/local/lib/python3.10/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (1.3.3)
+Requirement already satisfied: aiosignal&gt;=1.1.2 in /usr/local/lib/python3.10/dist-packages (from aiohttp-&gt;-r requirements.txt (line 1)) (1.3.1)
+Requirement already satisfied: pycares&gt;=4.0.0 in /usr/local/lib/python3.10/dist-packages (from aiodns-&gt;-r requirements.txt (line 2)) (4.3.0)
+Requirement already satisfied: soupsieve&gt;1.2 in /usr/local/lib/python3.10/dist-packages (from beautifulsoup4-&gt;-r requirements.txt (line 3)) (2.4.1)
+Requirement already satisfied: elastic-transport&lt;9,&gt;=8 in /usr/local/lib/python3.10/dist-packages (from elasticsearch-&gt;-r requirements.txt (line 6)) (8.4.0)
+Requirement already satisfied: python-dateutil&gt;=2.8.1 in /usr/local/lib/python3.10/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (2.8.2)
 Requirement already satisfied: pytz&gt;=2020.1 in /usr/local/lib/python3.10/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (2022.7.1)
 Requirement already satisfied: numpy&gt;=1.21.0 in /usr/local/lib/python3.10/dist-packages (from pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (1.22.4)
 Requirement already satisfied: geographiclib&lt;3,&gt;=1.52 in /usr/local/lib/python3.10/dist-packages (from geopy-&gt;-r requirements.txt (line 11)) (2.0)
@@ -631,58 +412,45 @@ Requirement already satisfied: cffi&gt;=1.5.0 in /usr/local/lib/python3.10/dist-
 Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.10/dist-packages (from python-dateutil&gt;=2.8.1-&gt;pandas&gt;=0.23.0-&gt;-r requirements.txt (line 8)) (1.16.0)
 Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.10/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;-r requirements.txt (line 1)) (3.4)
 Requirement already satisfied: pycparser in /usr/local/lib/python3.10/dist-packages (from cffi&gt;=1.5.0-&gt;pycares&gt;=4.0.0-&gt;aiodns-&gt;-r requirements.txt (line 2)) (2.21)
-Building wheels for collected packages: twint, cchardet, googletransx
+Building wheels for collected packages: twint
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for twint (setup.py) ... ?25l?25hdone
-  Created wheel for twint: filename=twint-2.1.21-py3-none-any.whl size=38850 sha256=43c840a4809ee973cc32750d48a7fb14ab565909559dd5830842847c509a8e14
-  Stored in directory: /tmp/pip-ephem-wheel-cache-eh3d01b0/wheels/9c/e0/10/965ff68ef86b22c82223f1ac18756eabc46b639fdd7c8c16c9
+  Created wheel for twint: filename=twint-2.1.21-py3-none-any.whl size=38850 sha256=f8fa0341352012627921998000553143062eb1fcadb9ee9da74ee5285cd64568
+  Stored in directory: /tmp/pip-ephem-wheel-cache-gt3la5ww/wheels/9c/e0/10/965ff68ef86b22c82223f1ac18756eabc46b639fdd7c8c16c9
+Successfully built twint
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for cchardet (setup.py) ... ?25l?25hdone
-  Created wheel for cchardet: filename=cchardet-2.1.7-cp310-cp310-linux_x86_64.whl size=261571 sha256=8da04e7046a100cccb8cf70e6a1769c3c5cd60831313017e5cacba3f6f596740
-  Stored in directory: /root/.cache/pip/wheels/ee/e0/ab/e01326f15c59438d080b1496dbab8091e952ec72f35e3c437e
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: twint
+  Attempting uninstall: twint
+    Found existing installation: twint 2.1.21
+    Uninstalling twint-2.1.21:
+      Successfully uninstalled twint-2.1.21
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for googletransx (setup.py) ... ?25l?25hdone
-  Created wheel for googletransx: filename=googletransx-2.4.2-py3-none-any.whl size=15953 sha256=5726ccdb00c67bac7f0dcc8989a8c35d5ef023edb64b478035a30d1da6526229
-  Stored in directory: /root/.cache/pip/wheels/12/79/4f/43718126b3548eda695b4c2fa4cd82667b2d62018a98dc6767
-Successfully built twint cchardet googletransx
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: fake-useragent, dataclasses, cchardet, schedule, multidict, frozenlist, elastic-transport, async-timeout, yarl, pycares, googletransx, elasticsearch, aiosignal, aiohttp, aiodns, aiohttp_socks, twint
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed aiodns-3.0.0 aiohttp-3.8.4 aiohttp_socks-0.4.1 aiosignal-1.3.1 async-timeout-4.0.2 cchardet-2.1.7 dataclasses-0.6 elastic-transport-8.4.0 elasticsearch-8.8.0 fake-useragent-1.1.3 frozenlist-1.3.3 googletransx-2.4.2 multidict-6.0.4 pycares-4.3.0 schedule-1.2.0 twint-2.1.21 yarl-1.9.2
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Successfully installed twint-2.1.21
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting aiohttp==3.7.0
-  Downloading aiohttp-3.7.0.tar.gz (1.1 MB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/1.1 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">1.1/1.1 MB</span> <span class=" -Color -Color-Red">45.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25h
+  Using cached aiohttp-3.7.0.tar.gz (1.1 MB)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Installing build dependencies ... ?25l?25hdone
+  Getting requirements to build wheel ... ?25l?25hdone
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Getting requirements to build wheel ... ?25l?25hdone
-  Preparing metadata (pyproject.toml) ... ?25l?25hdone
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Preparing metadata (pyproject.toml) ... ?25l?25hdone
 Requirement already satisfied: attrs&gt;=17.3.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp==3.7.0) (23.1.0)
+Collecting chardet&lt;4.0,&gt;=2.0 (from aiohttp==3.7.0)
+  Using cached chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.10/dist-packages (from aiohttp==3.7.0) (6.0.4)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting chardet&lt;4.0,&gt;=2.0 (from aiohttp==3.7.0)
-  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
-?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/133.4 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">133.4/133.4 kB</span> <span class=" -Color -Color-Red">14.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hRequirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.10/dist-packages (from aiohttp==3.7.0) (6.0.4)
-Collecting async-timeout&lt;4.0,&gt;=3.0 (from aiohttp==3.7.0)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading async_timeout-3.0.1-py3-none-any.whl (8.2 kB)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting async-timeout&lt;4.0,&gt;=3.0 (from aiohttp==3.7.0)
+  Using cached async_timeout-3.0.1-py3-none-any.whl (8.2 kB)
 Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.10/dist-packages (from aiohttp==3.7.0) (1.9.2)
 Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.10/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp==3.7.0) (3.4)
 Building wheels for collected packages: aiohttp
@@ -2109,6 +1877,7 @@ Building wheels for collected packages: aiohttp
 <p>5 rows × 38 columns</p>
 </div></div></div>
 </div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -2159,20 +1928,6 @@ Building wheels for collected packages: aiohttp
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>
